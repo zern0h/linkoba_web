@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #202020;
+  --color-navy-light: #252525;
+  --color-blue: #356df3;
+  --color-blue-light: #5a89f5;
+  --color-blue-muted: #e8edff;
+  --color-ink: #202020;
+  --color-ink2: #3a3a3a;
+  --color-muted: #777773;
+  --color-border: #dededb;
+  --color-surface: #f5f5f3;
+  --color-white: #ffffff;
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-plus-jakarta);
+
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.06), 0 1px 2px -1px rgb(0 0 0 / 0.06);
+  --shadow: 0 4px 16px 0 rgb(0 0 0 / 0.06), 0 2px 6px -2px rgb(0 0 0 / 0.04);
+  --shadow-md: 0 10px 32px 0 rgb(0 0 0 / 0.08), 0 4px 12px -4px rgb(0 0 0 / 0.06);
+  --shadow-lg: 0 20px 48px 0 rgb(0 0 0 / 0.10), 0 8px 20px -6px rgb(0 0 0 / 0.06);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  color: #202020;
+  background: #f5f5f3;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-plus-jakarta), system-ui, sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.font-display {
+  font-family: var(--font-plus-jakarta), system-ui, sans-serif;
+}
+
+/* Smooth focus rings */
+:focus-visible {
+  outline: 2px solid #356df3;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+/* Selection */
+::selection {
+  background: #356df320;
+  color: #202020;
+}
