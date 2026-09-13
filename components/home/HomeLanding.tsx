@@ -101,7 +101,7 @@ export default function HomeLanding() {
     <div className={styles.page}>
       <section className={styles.hero}>
         <div className={styles.heroCopy}>
-          <h1>Trusted professionals, when you need them. <em>Flexible work, when you want it.</em> <span><Search size={42} /></span></h1>
+          <h1>Trusted People, Flexible Work <span><Search size={42} /></span></h1>
           <p>Linkoba connects Leeds businesses and households with vetted professionals, and gives local workers the flexibility they need.</p>
           <div className={styles.heroActions}>
             <Link href="/contact">Find a Professional <Search size={17} /></Link>

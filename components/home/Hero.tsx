@@ -48,9 +48,8 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.08] tracking-tight mb-6"
           >
-            Trusted professionals,{" "}
-            when you need them.{" "}
-            <span className="text-[#4d9bff]">Flexible work, when you want it.</span>
+            Trusted People,{" "}
+            <span className="text-[#4d9bff]">Flexible Work</span>
           </motion.h1>
 
           {/* Sub */}
