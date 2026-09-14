@@ -50,6 +50,7 @@ export default function Hero() {
           >
             Trusted People,{" "}
             <span className="text-[#4d9bff]">Flexible Work</span>
+
           </motion.h1>
 
           {/* Sub */}
