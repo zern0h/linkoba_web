@@ -3,6 +3,9 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Building2, Briefcase } from "lucide-react";
 
+const CUSTOMER_URL = process.env.NEXT_PUBLIC_CUSTOMER_APP_URL ?? "https://app.linkoba.com";
+const PRO_URL = process.env.NEXT_PUBLIC_PRO_APP_URL ?? "https://work.linkoba.com";
+
 export default function FinalCTA() {
   return (
     <section className="py-20 lg:py-28 bg-[#f5f5f3]">
@@ -33,7 +36,7 @@ export default function FinalCTA() {
                 Kitchen Porters for your venue. Cleaners for your home or office. Verified, reliable, and fast to book.
               </p>
               <a
-                href="https://app.linkoba.com/signup"
+                href={`${CUSTOMER_URL}/register`}
                 className="inline-flex items-center gap-2 bg-[#356df3] hover:bg-[#2a5de0] text-white font-semibold px-7 py-3.5 rounded-[10px] transition-all shadow-[0_12px_24px_rgb(53_109_243_/25%)] group self-start text-sm"
               >
                 Get Started
@@ -54,7 +57,7 @@ export default function FinalCTA() {
                 Set your availability, accept what fits, and get paid after every job. No lock-in, no minimum hours.
               </p>
               <a
-                href="https://work.linkoba.com/signup"
+                href={`${PRO_URL}/register`}
                 className="inline-flex items-center gap-2 border border-white/20 hover:border-white/40 hover:bg-white/6 text-white font-semibold px-7 py-3.5 rounded-[10px] transition-all group self-start text-sm"
               >
                 Join as a Professional

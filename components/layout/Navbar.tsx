@@ -5,6 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { Menu, X, ChevronDown, User, Briefcase } from "lucide-react";
 
+const CUSTOMER_URL = process.env.NEXT_PUBLIC_CUSTOMER_APP_URL ?? "https://app.linkoba.com";
+const PRO_URL = process.env.NEXT_PUBLIC_PRO_APP_URL ?? "https://work.linkoba.com";
+
 const links = [
   { label: "What We Do", href: "/#services" },
   { label: "How We Work", href: "/how-it-works" },
@@ -116,13 +119,13 @@ export default function Navbar() {
         <div className="hidden items-center gap-3 lg:flex">
           <AuthDropdown
             label="Log In"
-            customerHref="https://app.linkoba.com/login"
-            professionalHref="https://work.linkoba.com/login"
+            customerHref={`${CUSTOMER_URL}/login`}
+            professionalHref={`${PRO_URL}/login`}
           />
           <AuthDropdown
             label="Sign Up"
-            customerHref="https://app.linkoba.com/signup"
-            professionalHref="https://work.linkoba.com/signup"
+            customerHref={`${CUSTOMER_URL}/register`}
+            professionalHref={`${PRO_URL}/register`}
           />
         </div>
 
@@ -173,7 +176,7 @@ export default function Navbar() {
             {mobileAuth && (
               <div className="mt-2 overflow-hidden rounded-xl border border-[#e5e5e3] bg-white">
                 <a
-                  href={mobileAuth === "login" ? "https://app.linkoba.com/login" : "https://app.linkoba.com/signup"}
+                  href={mobileAuth === "login" ? `${CUSTOMER_URL}/login` : `${CUSTOMER_URL}/register`}
                   className="flex items-center gap-3 px-4 py-3 text-[13px] text-[#222] hover:bg-[#f5f5f3]"
                   onClick={() => setOpen(false)}
                 >
@@ -187,7 +190,7 @@ export default function Navbar() {
                 </a>
                 <div className="mx-4 h-px bg-[#f0f0ee]" />
                 <a
-                  href={mobileAuth === "login" ? "https://work.linkoba.com/login" : "https://work.linkoba.com/signup"}
+                  href={mobileAuth === "login" ? `${PRO_URL}/login` : `${PRO_URL}/register`}
                   className="flex items-center gap-3 px-4 py-3 text-[13px] text-[#222] hover:bg-[#f5f5f3]"
                   onClick={() => setOpen(false)}
                 >

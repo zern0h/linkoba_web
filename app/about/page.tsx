@@ -120,7 +120,7 @@ export default function AboutPage() {
               </h3>
             </div>
             <p className="text-[#777773] text-sm leading-relaxed lg:pt-9 max-w-xl">
-              Beyond connecting supply and demand, Linkoba is designed to create real economic opportunity. We serve students, people returning to the workforce, women balancing responsibilities, and workers from underserved communities, giving everyone a structured, supported pathway into fair, flexible employment. Workforce access is not a luxury. We're building it as infrastructure.
+              Beyond connecting supply and demand, Linkoba is designed to create real economic opportunity. We serve students, people returning to the workforce, women balancing responsibilities, and workers from underserved communities, giving everyone a structured, supported pathway into fair, flexible employment. Workforce access is not a luxury. We&apos;re building it as infrastructure.
             </p>
           </div>
         </div>
